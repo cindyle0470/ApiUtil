@@ -1,0 +1,4 @@
+include ':ap5630wMobileApi'
+include ':androidlib'
+include ':app'
+rootProject.name = "MyApiPractice"

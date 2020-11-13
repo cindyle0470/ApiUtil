@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service
+    name="AUIS">
+
+    <servers>
+        <server
+            env="rt4230 dev"
+            scheme="https://"
+            host="mhjcpdxsn4.execute-api.ap-northeast-1.amazonaws.com/v1" />
+    </servers>
+
+    <apis>
+        <api
+            key="signUp"
+            expires="300"
+            method="POST"
+            path="/user/signup" />
+
+        <api
+            key="signIn"
+            expires="300"
+            method="POST"
+            path="/user/signin" />
+
+        <api
+            key="reconfirm"
+            expires="300"
+            method="POST"
+            path="/user/reconfirm" />
+
+        <api
+            key="changePassword"
+            expires="300"
+            method="POST"
+            path="/password/change" />
+
+        <api
+            key="forgotPassword"
+            expires="300"
+            method="POST"
+            path="/password/forgot" />
+    </apis>
+
+</service>

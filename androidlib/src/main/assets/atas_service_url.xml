@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service
+    name="ATAS">
+
+    <servers>
+        <server
+            env="rt4230 dev"
+            scheme="https://"
+            host="tgfywld1rf.execute-api.ap-northeast-1.amazonaws.com/v3" />
+    </servers>
+
+    <apis>
+        <api
+            key="getIoTCert"
+            expires="300"
+            method="GET"
+            path="/device/iotcert" />
+
+        <api
+            key="lookUpDevice"
+            expires="300"
+            method="GET"
+            path="/device/lookup" />
+
+        <api
+            key="createDevice"
+            expires="300"
+            method="PUT"
+            path="/device/create" />
+
+        <api
+            key="getDeviceList"
+            expires="300"
+            method="GET"
+            path="/device/list" />
+
+        <api
+            key="updateDeivceName"
+            expires="300"
+            method="POST"
+            path="/device/{deviceid}/update" />
+
+        <api
+            key="getDeivceDetail"
+            expires="300"
+            method="GET"
+            path="/device/{deviceid}/detail" />
+
+        <api
+            key="updateDeivceDetail"
+            expires="300"
+            method="GET"
+            path="/device/{deviceid}/detail" />
+
+        <api
+            key="updateDeviceShadow"
+            expires="300"
+            method="POST"
+            path="/device/{deviceid}/shadow" />
+
+        <api
+            key="getDeviceShadow"
+            expires="300"
+            method="GET"
+            path="/device/{deviceid}/shadow" />
+
+
+        <api
+            key="getDeviceEndpoint"
+            expires="300"
+            method="GET"
+            path="/device/{deviceid}/endpoint" />
+
+        <api
+            key="deleteDevice"
+            expires="300"
+            method="DELETE"
+            path="/device/{deviceid}/remove" />
+
+        <api
+            key="getDeviceBasicInfo"
+            expires="300"
+            method="GET"
+            path="/device/{deviceid}/basic" />
+
+    </apis>
+
+</service>

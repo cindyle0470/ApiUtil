@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service
+    name="AOAS">
+
+    <servers>
+        <server
+            env="rt4230 dev"
+            scheme="https://"
+            host="8pvx095pwf.execute-api.ap-northeast-1.amazonaws.com/v1" />
+    </servers>
+
+    <apis>
+        <api
+            key="getOAuth"
+            expires="300"
+            method="GET"
+            path="/oauth/authprovider/callback" />
+
+        <api
+            key="refreshToken"
+            expires="300"
+            method="POST"
+            path="/oauth/token/refresh" />
+    </apis>
+
+</service>
